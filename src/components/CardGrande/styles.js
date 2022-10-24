@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 
 export const LayoutCardGrande = styled.section`
         display: flex;
@@ -14,7 +15,7 @@ export const ImgCardGrande = styled.img`
         border-radius: 50%;
     `
 
-export const InfosCard = styled.section`
+export const InfosCardGrande = styled.section`
         display: flex;
         flex-direction: column;
         justify-items: flex-start;

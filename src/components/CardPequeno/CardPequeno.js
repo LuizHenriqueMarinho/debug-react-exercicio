@@ -1,14 +1,18 @@
 import React from 'react';
-import { LayoutCardPequeno, TituloCardPequeno, InfosCardPequeno} from "./styles"
+import styled from 'styled-components'
+import { LayoutCardPequeno, TituloCardPequeno, InfosCardPequeno, ImgCardPequeno} from "./styles"
 
-function CardPequeno(props) {
+export function CardPequeno(props) {
+    return(
         <LayoutCardPequeno>
-            <ImgCardPequeno src={props.img} />
-            <InfosCardPequeno>
-                <TituloCardPequeno>{props.nome}</TituloCardPequeno>
-                <p>{props.perfil.descricao}</p>
-            </InfosCardPequeno>
-        </LayoutCardPequeno>
+        <ImgCardPequeno src={props.imagem} />
+        <InfosCardPequeno>
+            <TituloCardPequeno>{props.nome}</TituloCardPequeno>
+            <p>{props.descricao}</p>
+        </InfosCardPequeno>
+    </LayoutCardPequeno>
+    )
+
 }
 
 export default CardPequeno
